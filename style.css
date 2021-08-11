@@ -1,0 +1,309 @@
+/*
+    File    : styles.css
+    Author  : Benjamin Mua Ngong <benjaminmuatao.bm@gmail.com>
+     Summary : HTML markup for assignment 2 of the course HTML, CSS and
+                Javascript for Web developers from Coursera
+
+    Last Update: 2019-04-19
+*/
+/* *****************************************************
+Default styles here
+- Style the font type, font size, background color here
+*********************************************************/
+/* Example how to call the headline and style it*/
+
+body,
+html {
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+    font-size: 1em;
+    /* The default font size for all fonts. You can change this per element*/
+    margin: auto;
+    /* position the content at the center of the page */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-header {
+  padding-top: 20px;
+}
+
+.navbar-header h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  /*text-transform: uppercase;*/
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+/* END HEADER */
+
+
+/* This is same for all views*/
+#headline {
+    font-size: 200%;
+     /*120% of 12px => approx 14 px;*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    /*text-transform: uppercase;*/
+}
+
+
+#container {
+    background-color: lightgrey;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+Give the texts inside the container some nice look
+*/
+.containerText{
+    padding: 1em;
+}
+/**
+ Notice that the headers do not change position and colors. You can change them all here
+ */
+.columnHeader {
+    text-align: center;
+    /*border-style: solid;*/
+    border-color: black;
+    padding: 0 2em;
+    /*
+    Padding and margin goes from
+    top right bottom left
+    padding: 2px 4px 2px 4px; means
+    padding-top: 2px;
+    padding-right: 4px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    This too can be written as
+    padding: 2px 4px;
+    
+    /*padding: 10px;*/
+    /*width: 25%;*/
+    /*
+    Let it stick to the right
+    - Make it float to the right
+    - Make it have zero margin to the top and right
+    */
+    /*float: right;*/
+    margin-right: 0;
+    margin-top: 0;
+    /*padding-right: 0;*/
+    /*margin-left: 69%;*/
+     /* Style the font and border  and position here*/
+}
+
+
+
+#column1Header {
+    /*background-color: lightgreen;*/
+
+
+
+    /*style the background color here */
+}
+
+#column2Header {
+    /*background-color: lightblue;*/
+
+
+
+    /*style the background color here */
+}
+
+
+#column3Header {
+    /*background-color: lightyellow;*/
+
+
+
+
+    /*style the background color here */
+}
+
+/*
+Desktop view
+The browser should display a desktop version of the site when the width of the browser window is 992px and above.
+*/
+@media (max-width: 1199px) {
+    #container {
+    background-color: lightblue;
+
+/**/
+     /* How do you want the container to display*/
+    }
+
+ /*   #column1 {
+        /* Style this column here */
+        background-color: lightpink;
+        float: left;
+        /*width: 30%;*/
+        border-style: solid;
+        border-color: blue;
+        margin:25px
+    */}
+
+
+   /* #column2 {
+       background-color: lightblue;
+       /*width: 30%;*/
+       float: left;
+       border-style: solid;
+       border-color: red;
+       margin:25px;
+       margin-left: 0px
+*/
+   }
+
+/**/
+  /*  #column3 {
+        background-color: lightgreen;
+        /*width: 30%;*/
+        float: left;
+        border-style: solid;
+        border-color: black;
+        margin-top: 25px;
+
+    }*/
+
+
+}
+
+/*
+Tablet view
+Tablet view should appear only if the width of the browser window is between 768px and 991px
+*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #container {
+        background-color: lightblue;
+
+        /* How do you want the container to display*/
+
+    }
+
+   /* #column1 {
+        /* Style this column here */
+        background-color: magenta;
+        border-style: solid;
+        border-color: blue;
+        margin: 25px;
+        /*width: 44%;*/
+        float: left;*/
+
+
+    }
+
+
+   /* #column2 {
+        background-color: cyan;
+        border-style: solid;
+        border-color: green;
+        /*width: 44%;*/
+        margin-right: 25px;
+        float: right;
+        margin-top: 25px*/
+
+
+    }
+
+
+    /*#column3 {
+        background-color: yellow;
+        border-style: solid;
+        border-color: maroon;
+        margin: 25px;
+        /*width: 94%;*/
+        float: left;*/
+
+
+    }
+
+}
+
+/*
+Mobile View
+Mobile view should appear only if the width of the browser is equal to or less than 767px.
+
+*/
+@media screen and (max-width: 767px) {
+    #container {
+        background-color: yellow;
+        border-style: solid;
+        border-color: black;
+
+               /* How do you want the container to display*/
+
+    }
+
+
+    /*#column1 {
+        /* Style this column here */
+        background-color: blue;
+        border-style: solid;
+        border-color: red;
+        margin: 25px;
+    }*/
+
+
+    /*#column2 {*/
+        background-color: grey;
+        border-style: solid;
+        border-color: black;
+        margin: 25px;
+    }
+
+
+    /*#column3 {*/
+        border-style: solid;
+        border-color: white;
+        background-color: turquoise;
+        margin: 25px;
+    }
+#collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+#collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+
+}
